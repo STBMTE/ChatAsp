@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IIw6x8f1jwjB5le+4IsW4CpvzEClst5u2F6ni0swYiu6k8Gg0Z4ruMfhBqvjhHmD4oEY87hN8dETIRLYcp2I+g==",
+  "dgSpecHash": "ujIPSM6hOycvaNu4/w0URt6IwHUgluesXps6cQsmnS6ZWf7TVcjwENPajqZL93uCzRuHTDzXv5vitc0vIMpPDQ==",
   "success": true,
   "projectFilePath": "/Users/kseniya/RiderProjects/Chat/Chat/Chat.csproj",
   "expectedPackageFiles": [
@@ -37,12 +37,8 @@
     "/Users/kseniya/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "/Users/kseniya/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/Users/kseniya/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
-    "/Users/kseniya/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/Users/kseniya/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
-    "/Users/kseniya/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
-    "/Users/kseniya/.nuget/packages/microsoft.netcore.app.ref/6.0.12/microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
-    "/Users/kseniya/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.12/microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
-    "/Users/kseniya/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.12/microsoft.netcore.app.host.osx-arm64.6.0.12.nupkg.sha512"
+    "/Users/kseniya/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
