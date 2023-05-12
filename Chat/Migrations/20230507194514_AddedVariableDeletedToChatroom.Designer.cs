@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Chat.Migrations
 {
-    [DbContext(typeof(ChatContext))]
+    [DbContext(typeof(DataContext))]
     [Migration("20230507194514_AddedVariableDeletedToChatroom")]
     partial class AddedVariableDeletedToChatroom
     {

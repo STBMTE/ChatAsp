@@ -1,4 +1,6 @@
+using AutoMapper;
 using Chat.Database;
+using Chat.Mapper;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,7 +8,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<ChatContext>(x => x.UseSqlite("Data Source=app-data.db"));
+builder.Services.AddDbContext<DataContext>(x => x.UseSqlite("Data Source=app-data.db"));
+
+//TODO: changed mapper!
+// "Оно так не делается, но если хочется, то вот так"
+var mapperConfig = new MapperConfiguration(mc => { mc.AddProfile(new AllMappersProfile()); });
+IMapper mapper = mapperConfig.CreateMapper();
+
+builder.Services.AddScoped<IMapper>((_) => mapperConfig.CreateMapper());
+builder.Services.AddMvc();
+
 
 var app = builder.Build();
 

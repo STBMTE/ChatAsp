@@ -70,3 +70,6 @@
 /Users/kseniya/RiderProjects/Chat/Chat/obj/Debug/net7.0/Chat.pdb
 /Users/kseniya/RiderProjects/Chat/Chat/obj/Debug/net7.0/Chat.genruntimeconfig.cache
 /Users/kseniya/RiderProjects/Chat/Chat/obj/Debug/net7.0/ref/Chat.dll
+/Users/kseniya/RiderProjects/Chat/Chat/bin/Debug/net7.0/AutoMapper.dll
+/Users/kseniya/RiderProjects/Chat/Chat/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/kseniya/RiderProjects/Chat/Chat/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll

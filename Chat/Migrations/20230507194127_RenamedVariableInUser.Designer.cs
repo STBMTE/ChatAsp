@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Chat.Migrations
 {
-    [DbContext(typeof(ChatContext))]
+    [DbContext(typeof(DataContext))]
     [Migration("20230507194127_RenamedVariableInUser")]
     partial class RenamedVariableInUser
     {
