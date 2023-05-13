@@ -10,13 +10,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(x => x.UseSqlite("Data Source=app-data.db"));
 
-//TODO: changed mapper!
-// "Оно так не делается, но если хочется, то вот так"
-var mapperConfig = new MapperConfiguration(mc => { mc.AddProfile(new AllMappersProfile()); });
-IMapper mapper = mapperConfig.CreateMapper();
-
-builder.Services.AddScoped<IMapper>((_) => mapperConfig.CreateMapper());
 builder.Services.AddMvc();
+builder.Services.AddAutoMapper(typeof(AllMappersProfile));
 
 
 var app = builder.Build();

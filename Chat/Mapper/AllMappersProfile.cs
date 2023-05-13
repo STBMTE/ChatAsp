@@ -13,5 +13,7 @@ public class AllMappersProfile: Profile
         CreateMap<ChatMessage, ChatMessageDTO>();
         
         CreateMap<ChatroomDto, Chatroom>().ForMember(x=>x.Messages , options=>options.Ignore());
+        CreateMap<UserDto, User>().ForMember(x=>x.Chatrooms , options=>options.Ignore());
+        //CreateMap<ChatMessageDTO, ChatMessage>().ForMember(x=>x.Chatroom , options=>options.Ignore());
     }
 }
