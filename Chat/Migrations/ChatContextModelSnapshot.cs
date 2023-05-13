@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Chat.Migrations
 {
-    [DbContext(typeof(DataContext))]
+    [DbContext(typeof(ChatContext))]
     partial class ChatContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -41,7 +41,7 @@ namespace Chat.Migrations
 
                     b.HasIndex("SenderId");
 
-                    b.ToTable("ChatMessages");
+                    b.ToTable("ChatMessages", (string)null);
                 });
 
             modelBuilder.Entity("Chat.Models.Chatroom", b =>
@@ -58,7 +58,7 @@ namespace Chat.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Chatroom");
+                    b.ToTable("Chatroom", (string)null);
                 });
 
             modelBuilder.Entity("Chat.Models.User", b =>
@@ -84,7 +84,7 @@ namespace Chat.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("ChatroomUser", b =>
@@ -99,7 +99,7 @@ namespace Chat.Migrations
 
                     b.HasIndex("UsersId");
 
-                    b.ToTable("ChatroomUser");
+                    b.ToTable("ChatroomUser", (string)null);
                 });
 
             modelBuilder.Entity("Chat.Models.ChatMessage", b =>

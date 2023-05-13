@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Chat.Models
 {
-    public class ChatMessage
+    public record ChatMessage
     {
         public long Id { get; set; }
         public string Message { get; set; }

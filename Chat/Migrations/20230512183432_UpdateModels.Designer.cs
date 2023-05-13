@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Chat.Migrations
 {
-    [DbContext(typeof(DataContext))]
+    [DbContext(typeof(ChatContext))]
     [Migration("20230512183432_UpdateModels")]
     partial class UpdateModels
     {

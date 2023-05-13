@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Chat.Models
 {
-    public class User
+    public record User
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -11,6 +11,6 @@ namespace Chat.Models
         public string Phone { get; set; }
         public bool Deleted { get; set; }
         
-        public ICollection<Chatroom> Chatrooms { get; set; } = new List<Chatroom>();
+        public ICollection<Chatroom> Chatrooms { get; set; }
     }
 }

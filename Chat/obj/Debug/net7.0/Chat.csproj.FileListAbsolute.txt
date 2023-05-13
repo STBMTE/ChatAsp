@@ -73,3 +73,6 @@
 /Users/kseniya/RiderProjects/Chat/Chat/bin/Debug/net7.0/AutoMapper.dll
 /Users/kseniya/RiderProjects/Chat/Chat/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.dll
 /Users/kseniya/RiderProjects/Chat/Chat/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/kseniya/RiderProjects/Chat/Chat/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/kseniya/RiderProjects/Chat/Chat/bin/Debug/net7.0/MediatR.dll
+/Users/kseniya/RiderProjects/Chat/Chat/bin/Debug/net7.0/MediatR.Contracts.dll
