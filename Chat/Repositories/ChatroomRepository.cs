@@ -25,7 +25,7 @@ namespace Chat.Repositories
             //     .Select(c => c)
             //     .ToListAsync();
 
-            return await GetAll(c => c.Users.Any(u => u.Id == userId))
+            var a = await GetAll(c => c.Users.Any(u => u.Id == userId))
                 .Include(c => c.Messages)
                 .ToListAsync();
 
@@ -41,6 +41,18 @@ namespace Chat.Repositories
             //     .Include(c => c.Messages.OrderBy(m  => m.Id).Take(1))
             //     .ThenInclude(m => m.Sender)
             //     .ToArrayAsync();
+            for (int i = 0; i < a.Count; i++)
+            {
+                int l = a[i].Messages.Count;
+                var c = a[i].Messages.ToList();
+                for (int j = 0; j < l; j++)
+                {
+                    c[i].Chatroom = null;
+                    c[i].Sender = null;
+                }
+            }
+            
+            return a;
         }
     }
 }
